@@ -25,9 +25,12 @@ const SIDEBAR_QUERY = graphql`
 				social {
 					twitter
 					github
-					youtube
-					email
+					youtube			
 					instagram
+					facebook
+					linkedin
+					featuredmusic
+					email
 				}
 			}
 		}
@@ -161,7 +164,7 @@ const Sidebar = () => {
 					aria-label="Link to my featured music realease"
 					as="a"
 					circular
-					href={social.featuremusic}
+					href={social.featuredmusic}
 					target="_blank"
 					rel="noopener noreferrer"
 				>

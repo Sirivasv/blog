@@ -75,7 +75,6 @@ const Layout = ({ location, children }) => {
 				{header}
 				<Button
 					aria-label="Light and dark mode switch"
-					circular
 					onClick={toggleTheme}
 					className="container"
 					css={{
@@ -86,7 +85,7 @@ const Layout = ({ location, children }) => {
 						transitionProperty: 'background-color, color',
 					}}
 				>
-					{theme === 'light' ? <FiSun /> : <FiMoon />}
+					{theme === 'light' ? <span> <FiMoon /> Dark Mode</span> : <span> <FiSun /> Light Mode</span>}
 					<div
 						className={theme}
 						css={{
@@ -105,7 +104,7 @@ const Layout = ({ location, children }) => {
 				</Button>
 			</header>
 			<main>{children}</main>
-		</div>
+		</div >
 	);
 };
 

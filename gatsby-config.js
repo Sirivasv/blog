@@ -11,7 +11,7 @@ module.exports = {
 			youtube: 'https://www.youtube.com/channel/UCdegppamDMrM2L256RxyOMA',
 			instagram: 'https://instagram.com/sirivasv',
 			facebook: 'https://facebook.com/sirivasv',
-			linkedin: 'https://linkedin.com/sirivasv',
+			linkedin: 'https://www.linkedin.com/in/sirivasv/',
 			featuredmusic: 'https://distrokid.com/hyperfollow/saulivanrivasvega/asymptotic-notations',
 			email: 'mailto:saul.ivan.rivas.vega@outlook.com'
 		},
@@ -58,6 +58,7 @@ module.exports = {
 					`gatsby-remark-prismjs`,
 					`gatsby-remark-copy-linked-files`,
 					`gatsby-remark-smartypants`,
+					`gatsby-remark-bibliography`,
 					`gatsby-remark-external-links`,
 				],
 			},
