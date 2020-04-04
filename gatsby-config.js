@@ -1,20 +1,19 @@
 module.exports = {
 	siteMetadata: {
-		bio: 'Life, music, code and things in between…',
-		title: `Divyanshu Maithani`,
-		author: `Divyanshu Maithani`,
-		description: `Personal blog of Divyanshu Maithani`,
-		siteUrl: `https://divyanshu013.dev`,
+		bio: 'I am a MS student at UNAM in México.',
+		title: `Saul Ivan Rivas Vega`,
+		author: `Saul Ivan Rivas Vega`,
+		description: `Personal blog of Saul Ivan Rivas Vega`,
+		siteUrl: `https://sirv.top`,
 		social: {
-			twitter: `https://twitter.com/divyanshu013`,
-			github: 'https://github.com/divyanshu013',
-			youtube: 'https://youtube.com/WhatTheJavaScript',
-			soundcloud: 'https://soundcloud.com/divyanshu-maithani',
-			instagram: 'https://instagram.com/divyanshu013',
-			email: 'mailto:div.blackcat@gmail.com',
-			stackoverflow: 'https://stackoverflow.com/users/4952669/divyanshu-maithani',
-			newsletter: 'https://tinyletter.com/divyanshu',
-			goodreads: 'https://www.goodreads.com/user/show/62159316-divyanshu-maithani',
+			twitter: `https://twitter.com/sirivasv`,
+			github: 'https://github.com/sirivasv',
+			youtube: 'https://www.youtube.com/channel/UCdegppamDMrM2L256RxyOMA',
+			instagram: 'https://instagram.com/sirivasv',
+			facebook: 'https://facebook.com/sirivasv',
+			linkedin: 'https://linkedin.com/sirivasv',
+			featuredmusic: 'https://distrokid.com/hyperfollow/saulivanrivasvega/asymptotic-notations',
+			email: 'mailto:saul.ivan.rivas.vega@outlook.com'
 		},
 	},
 	plugins: [
@@ -49,6 +48,13 @@ module.exports = {
 							wrapperStyle: `margin-bottom: 1.0725rem`,
 						},
 					},
+					{
+						resolve: `gatsby-remark-katex`,
+						options: {
+							// Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+							strict: `warn`
+						}
+					},
 					`gatsby-remark-prismjs`,
 					`gatsby-remark-copy-linked-files`,
 					`gatsby-remark-smartypants`,
@@ -62,8 +68,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Div's Blog`,
-				short_name: `Div`,
+				name: `Saul Ivan Rivas Vega Blog`,
+				short_name: `sirivasv`,
 				start_url: `/`,
 				background_color: `#121212`,
 				theme_color: `#1d1d1d`,
@@ -89,15 +95,6 @@ module.exports = {
 			resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
 			options: {
 				devMode: false,
-			},
-		},
-		{
-			resolve: `gatsby-plugin-google-analytics`,
-			options: {
-				trackingId: 'UA-54730700-3',
-				head: false,
-				anonymize: true,
-				respectDNT: true,
 			},
 		},
 		'gatsby-plugin-catch-links',

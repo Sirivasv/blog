@@ -24,7 +24,6 @@ const Bio = () => {
 						twitter
 						github
 						youtube
-						newsletter
 					}
 				}
 			}
@@ -70,14 +69,12 @@ const Bio = () => {
 			/>
 			<div css={{ fontSize: 16, color: secondary }}>
 				<p>
-					Personal blog of <a href={social.twitter}>{author}</a>. I’m a{' '}
-					<a href={social.github}>JavaScript engineer</a> working with React, React Native, GraphQL
-					and Node. I also create <a href={social.youtube}>programming videos</a> with my friend. In
-					my spare time I play music and DoTA.
-				</p>
-				<p>
-					You may follow me on <a href={social.twitter}>twitter</a> or join my{' '}
-					<a href={social.newsletter}>newsletter</a> for latest updates.
+					Personal blog of <a href={social.twitter}>{author}</a>. I'm a{' '}
+					<a href={social.github}>MS student in computer science at UNAM in México</a>, and I am
+					interested in the computational analysis of audio signals.
+					I am also interested in cognitive perception of music and creative systems.
+					I sometimes play and create songs using GarageBand or Ableton you can fin them in my <a href={social.youtube}>Youtube Channel</a>.
+					I also share some news regarding Music Information Retrieval at my <a href={social.twitter}>twitter</a>.
 				</p>
 			</div>
 		</div>

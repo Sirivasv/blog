@@ -10,6 +10,7 @@ import { rhythm } from '../utils/typography';
 import ThemeProvider from '../components/ThemeProvider';
 import ThemeContext from '../components/ThemeContext';
 import { getTheme } from '../utils/theme';
+import "katex/dist/katex.min.css";
 
 const BlogPost = ({ data, pageContext, location }) => {
 	const post = data.markdownRemark;
