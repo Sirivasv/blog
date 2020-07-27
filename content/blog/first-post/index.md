@@ -28,6 +28,9 @@ $$
 a^2 + b^2 = c^2
 $$
 
+## Testing redo
+jul 27 2020
+
 ### References
 
 <bibliography>
